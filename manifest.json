@@ -36,3 +36,14 @@
     }
   ]
 }
+cd ~/seppogen
+sed -i 's|"/seppogen/index.html?source=pwa"|"/index.html?source=pwa"|g' manifest.json
+sed -i 's|"/seppogen/"|"/"|g' manifest.json
+sed -i 's|/seppogen/|/|g' sw.js
+sed -i 's|/seppogen/manifest.json|/manifest.json|g' index.html
+sed -i 's|/seppogen/sw.js|/sw.js|g' index.html
+git add .
+git commit -m "Updated URLs for GitHub Pages deployment"
+git push
+
+
