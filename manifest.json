@@ -1,0 +1,38 @@
+{
+  "name": "Namengenerator für Seppo",
+  "short_name": "SeppoGen",
+  "description": "Ein Fantasy-Namengenerator für Seppos Welt – entdecke epische Namen für Orte, Wesen und Legenden!",
+  "lang": "de",
+  "start_url": "/seppogen/index.html?source=pwa",
+  "scope": "/seppogen/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#3E7D63",
+  "icons": [
+    {
+      "src": "/seppogen/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/seppogen/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/seppogen/icon-light-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/seppogen/icon-light-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ]
+}
