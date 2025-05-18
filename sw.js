@@ -1,13 +1,13 @@
 
 const cacheName = 'seppo-cache-v1';
 const filesToCache = [
-  '/seppogen/',
-  '/seppogen/index.html',
-  '/seppogen/manifest.json',
-  '/seppogen/icon-192.png',
-  '/seppogen/icon-512.png',
-  '/seppogen/icon-light-192.png',
-  '/seppogen/icon-light-512.png'
+  '/',
+  '/index.html',
+  '/manifest.json',
+  '/icon-192.png',
+  '/icon-512.png',
+  '/icon-light-192.png',
+  '/icon-light-512.png'
 ];
 
 self.addEventListener('install', event => {

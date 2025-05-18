@@ -3,8 +3,8 @@
   "short_name": "SeppoGen",
   "description": "Ein Fantasy-Namengenerator für Seppos Welt – entdecke epische Namen für Orte, Wesen und Legenden!",
   "lang": "de",
-  "start_url": "/seppogen/index.html?source=pwa",
-  "scope": "/seppogen/",
+  "start_url": "/index.html?source=pwa",
+  "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
@@ -37,8 +37,8 @@
   ]
 }
 cd ~/seppogen
-sed -i 's|"/seppogen/index.html?source=pwa"|"/index.html?source=pwa"|g' manifest.json
-sed -i 's|"/seppogen/"|"/"|g' manifest.json
+sed -i 's|"/index.html?source=pwa"|"/index.html?source=pwa"|g' manifest.json
+sed -i 's|"/"|"/"|g' manifest.json
 sed -i 's|/seppogen/|/|g' sw.js
 sed -i 's|/seppogen/manifest.json|/manifest.json|g' index.html
 sed -i 's|/seppogen/sw.js|/sw.js|g' index.html

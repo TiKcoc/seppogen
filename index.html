@@ -5,7 +5,7 @@
   <meta name="description" content="Namengenerator für Seppo – Erstelle einzigartige Namen für Charaktere, Orte und mehr.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#222"> <!-- Browser-Theme-Farbe für PWA -->
-  <link rel="manifest" href="/seppogen/manifest.json"> <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json"> <!-- PWA Manifest -->
   <link rel="icon" href="/seppogen/icon-192.png" type="image/png" sizes="192x192"> <!-- Favicon -->
   <style>
     /* Globale Stile für dunkles Design */
@@ -138,7 +138,7 @@
   </style>  <!-- Service Worker Registrierung angepasst für GitHub Pages -->  <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/seppogen/sw.js').then(function(registration) {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
           console.log('ServiceWorker registered:', registration.scope);
         }, function(err) {
           console.log('ServiceWorker registration failed:', err);
