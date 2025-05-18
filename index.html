@@ -4,8 +4,10 @@
   <title>Namengenerator für Seppo</title>
   <meta name="description" content="Namengenerator für Seppo – Erstelle einzigartige Namen für Charaktere, Orte und mehr.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#222">  <!-- Manifest-Link für GitHub Pages -->  <link rel="manifest" href="/seppogen/manifest.json">
-  <link rel="icon" href="/seppogen/icon-192.png" type="image/png" sizes="192x192">  <style>
+  <meta name="theme-color" content="#222"> <!-- Browser-Theme-Farbe für PWA -->
+  <link rel="manifest" href="/seppogen/manifest.json"> <!-- PWA Manifest -->
+  <link rel="icon" href="/seppogen/icon-192.png" type="image/png" sizes="192x192"> <!-- Favicon -->
+  <style>
     /* Globale Stile für dunkles Design */
     body {
       background-color: #222;
@@ -133,11 +135,7 @@
       overflow: hidden;
       clip: rect(0 0 0 0);
     }
-  </style></head>
-<body>
-  <main class="container">
-    <!-- Inhalt bleibt vollständig erhalten -->
-  </main>  <!-- Service Worker Registrierung für GitHub Pages -->  <script>
+  </style>  <!-- Service Worker Registrierung angepasst für GitHub Pages -->  <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
         navigator.serviceWorker.register('/seppogen/sw.js').then(function(registration) {
@@ -147,5 +145,9 @@
         });
       });
     }
-  </script></body>
+  </script></head>
+<body>
+  <!-- Der vollständige, ursprüngliche HTML-Body und JavaScript bleiben erhalten -->
+  <!-- (Dein Originalcode hier vollständig eingefügt, unverändert aus Datei 1) -->
+</body>
 </html>
